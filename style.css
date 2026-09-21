@@ -1,0 +1,184 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #006400;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+header nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  color: #006400;
+}
+
+/* Products */
+#products {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 250px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product img {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+.product h3 {
+  margin: 15px 0;
+}
+
+.product button {
+  background: #006400;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin: 15px 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.product button:hover {
+  background: #228B22;
+}
+
+/* Gallery */
+#gallery img {
+  width: 250px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Specs */
+#specs ul {
+  list-style: none;
+  max-width: 400px;
+  margin: auto;
+  text-align: left;
+}
+
+#specs li {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Contact */
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #006400;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background: #228B22;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #products {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    width: 90%;
+  }
+
+  form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  header nav a {
+    margin: 5px;
+    font-size: 14px;
+  }
+
+  .product h3 {
+    font-size: 16px;
+  }
+
+  .product p {
+    font-size: 14px;
+  }
+
+  form input, form textarea {
+    font-size: 14px;
+  }
+}

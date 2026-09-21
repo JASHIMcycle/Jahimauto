@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E‑Rickshaw Commercial Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>ই‑রিকশা অনলাইন শপ</h1>
+    <nav>
+      <a href="#home">হোম</a>
+      <a href="#about">আমাদের সম্পর্কে</a>
+      <a href="#products">প্রোডাক্ট</a><button onclick="addToCart('Passenger E‑Rickshaw', 150000)">কার্টে যোগ করুন</button>
+<button onclick="addToCart('Cargo E‑Rickshaw', 200000)">কার্টে যোগ করুন</button>
+
+<!-- Cart Section -->
+<section id="cart"></section>
+
+      <a href="#gallery">গ্যালারি</a>
+      <a href="#specs">স্পেসিফিকেশন</a>
+      <a href="#contact">যোগাযোগ</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h2>Welcome to E‑Rickshaw Shop</h2>
+    <p>আমাদের ই‑রিকশা পরিবেশবান্ধব, সাশ্রয়ী এবং আধুনিক প্রযুক্তি নির্ভর।</p>
+  </section>
+
+  <!-- About Us -->
+  <section id="about">
+    <h2>আমাদের সম্পর্কে</h2>
+    <p>আমরা ই‑রিকশা উৎপাদন ও বিক্রিতে বিশেষজ্ঞ। আমাদের লক্ষ্য হলো পরিবেশবান্ধব পরিবহন ব্যবস্থা তৈরি করা।</p>
+  </section>
+
+  <!-- Products -->
+  <section id="products">
+    <h2>আমাদের প্রোডাক্ট</h2>
+    <div class="product">
+      <img src="rickshaw1.jpg" alt="Passenger E‑Rickshaw">
+      <h3>Passenger E‑Rickshaw</h3>
+      <p>দাম: ৳১,৫০,০০০</p>
+      <button>কার্টে যোগ করুন</button>
+    </div>
+    <div class="product">
+      <img src="rickshaw2.jpg" alt="Cargo E‑Rickshaw">
+      <h3>Cargo E‑Rickshaw</h3>
+      <p>দাম: ৳২,০০,০০০</p>
+      <button>কার্টে যোগ করুন</button>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <h2>গ্যালারি</h2>
+    <img src="gallery1.jpg" alt="Rickshaw Gallery">
+    <img src="gallery2.jpg" alt="Rickshaw Gallery">
+  </section>
+
+  <!-- Technical Specs -->
+  <section id="specs">
+    <h2>টেকনিক্যাল স্পেসিফিকেশন</h2>
+    <ul>
+      <li>Motor: 1000W</li>
+      <li>Controller: Heavy Duty</li>
+      <li>Battery: Lithium‑Ion</li>
+      <li>Roof: Iron</li>
+    </ul>
+  </section>
+
+  <!-- Contact Us -->
+  <section id="contact">
+    <h2>যোগাযোগ করুন</h2>
+    <p>ঠিকানা: ঢাকা, বাংলাদেশ</p>
+    <p>ফোন: +880123456789</p>
+    <p>ইমেইল: info@erickshawbd.com</p>
+    <form>
+      <input type="text" placeholder="নাম">
+      <input type="email" placeholder="ইমেইল">
+      <textarea placeholder="বার্তা"></textarea>
+      <button type="submit">পাঠান</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© ২০২৬ ই‑রিকশা শপ | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
